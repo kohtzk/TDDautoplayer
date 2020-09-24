@@ -11,8 +11,8 @@ failuredice = [1, 2, 4, 1]
 # failuredice = [1]
 # failuredice = [2, 1]
 optimal = 5.485
-screenx = 1920
-screeny = 0
+screenx = 12
+screeny = 2
 loop = True
 
 
@@ -142,6 +142,9 @@ def restart():
     docrates()
     doendseq()
     dostartseq()
+
+while not keyboard.is_pressed("`"):
+    time.sleep(1)
 
 dostartseq()
 while True:
